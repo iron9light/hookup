@@ -619,8 +619,13 @@ object HookupServer {
    * @param timeout a [[org.jboss.netty.util.Timeout]]
    */
   private class WebSocketCancellable(timeout: NettyTimeout) extends Cancellable {
-    def cancel() {
-      timeout.cancel()
+    def cancel() = {
+      if (timeout.isCancelled)
+        false
+      else {
+        timeout.cancel()
+        true
+      }
     }
 
     def isCancelled = timeout.isCancelled
