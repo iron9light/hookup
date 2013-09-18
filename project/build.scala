@@ -14,7 +14,7 @@ object HookupBuild extends Build {
     libraryDependencies ++= Seq(
       "io.netty" % "netty" % "3.6.6.Final",
       "com.github.nscala-time" %% "nscala-time" % "0.4.2",
-      "net.liftweb" %% "lift-json" % "2.5" % "compile",
+      "net.liftweb" %% "lift-json" % "2.5.1" % "compile",
       "commons-io" % "commons-io" % "2.4",
       "com.typesafe.akka" %% "akka-actor" % "2.2.1" % "compile",
       "com.typesafe.akka" %% "akka-testkit" % "2.2.1" % "test",
