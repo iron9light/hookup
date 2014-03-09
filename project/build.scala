@@ -8,19 +8,19 @@ object HookupBuild extends Build {
     organization := "io.backchat.hookup",
     name := "hookup",
     version := "0.2.3-SNAPSHOT",
-    scalaVersion := "2.10.2",
+    scalaVersion := "2.10.3",
     //crossScalaVersions := Seq("2.9.1", "2.9.1-1", "2.9.2"),
     compileOrder := CompileOrder.ScalaThenJava,
     libraryDependencies ++= Seq(
       "io.netty" % "netty" % "3.6.6.Final",
-      "com.github.nscala-time" %% "nscala-time" % "0.4.2",
+      "com.github.nscala-time" %% "nscala-time" % "0.8.0",
       "net.liftweb" %% "lift-json" % "2.5.1" % "compile",
       "commons-io" % "commons-io" % "2.4",
-      "com.typesafe.akka" %% "akka-actor" % "2.2.1" % "compile",
-      "com.typesafe.akka" %% "akka-testkit" % "2.2.1" % "test",
+      "com.typesafe.akka" %% "akka-actor" % "2.2.4" % "compile",
+      "com.typesafe.akka" %% "akka-testkit" % "2.2.4" % "test",
       "org.specs2" %% "specs2" % "1.14" % "test",
       "junit" % "junit" % "4.11" % "test",
-      "joda-time" % "joda-time" % "2.2"
+      "joda-time" % "joda-time" % "2.3"
     ),
     scalacOptions ++= Seq(
       "-optimize",
